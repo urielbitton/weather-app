@@ -6,6 +6,24 @@
   gap: 50px;
 }
 
+/* Dark mode styles */
+.app-container.darkmode .weather-widget {
+  background: var(--dark1);
+  border-color: var(--dark1)
+}
+.app-container.darkmode .weather-widget .day-box {
+  background: var(--dark2)
+}
+.app-container.darkmode .weather-widget h4 {
+  color: #aaa;
+}
+.app-container.darkmode .weather-widget .day-box .text-info big {
+  color: #ccc;
+}
+.app-container.darkmode .weather-widget .dark-mode-btn {
+  background: var(--dark1)
+}
+
 @media (max-width: 930px) {
   .app-container {
     width: 95%;

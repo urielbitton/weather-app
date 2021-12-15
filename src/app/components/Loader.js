@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { StoreContext } from "../store/store"
 import '../styles/Loader.css'
 
 export default function Loader() {
+
+  const {darkMode} = useContext(StoreContext)
+
   return (
-    <div className='loader'>
+    <div 
+      className='loader'
+      style={{background: darkMode ? "var(--dark2)" : "var(--bgColor)"}}
+    >
       <svg xmlns="http://www.w3.org/2000/svg" width="70px" height="70px" viewBox="0 0 100 100">
         <g transform="translate(20 20)">
           <rect x="-15" y="-15" width="30" height="30" fill="#2f86ff">
