@@ -1,11 +1,15 @@
-import React, { createContext, useState } from 'react'
+import React, { createContext, useState, useEffect } from 'react'
 
 export const StoreContext = createContext()
 
  
 const StoreContextProvider = (props) => {
 
-  const [darkMode, setDarkMode] = useState(false)
+  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkmode') === "true"?true:false)
+
+  useEffect(() => {
+    localStorage.setItem('darkmode', !darkMode?"false":"true")  
+  },[darkMode]) 
 
   return <StoreContext.Provider value={{ 
     darkMode, setDarkMode
