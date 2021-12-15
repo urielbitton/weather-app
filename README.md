@@ -1,3 +1,1 @@
-# Getting Started with Create React App
-
-
+A weather app made with React & <3
