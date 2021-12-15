@@ -5,10 +5,10 @@ export const StoreContext = createContext()
  
 const StoreContextProvider = (props) => {
 
-  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkmode') === "true"?true:false)
+  const [darkMode, setDarkMode] = useState(localStorage.getItem('darkmode') === "true" ? true : false)
 
   useEffect(() => {
-    localStorage.setItem('darkmode', !darkMode?"false":"true")  
+    localStorage.setItem('darkmode', !darkMode ? "false" : "true")  
   },[darkMode]) 
 
   return <StoreContext.Provider value={{ 
