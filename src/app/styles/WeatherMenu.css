@@ -1,0 +1,20 @@
+.weather-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  width: 100%;
+}
+.weather-menu h1 {
+  font-size: 43px;
+  font-weight: 400;
+  transition: all 0.2s;
+}
+.weather-menu h1:hover {
+  color: var(--color);
+}
+.weather-menu a.active-link h1 {
+  font-weight: 600;
+  color: var(--color)
+}
