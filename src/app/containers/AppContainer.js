@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import '../styles/AppContainer.css'
 import WeatherMenu from "../components/WeatherMenu"
-import WeatherWidget from '../components/WeatherWidget'
 import { Route } from 'react-router'
 import { cities } from '../api/citiesAPI'
 import { Switch } from "react-router-dom"
 import { StoreContext } from "../store/store"
+import Homepage from "../pages/Homepage"
 
 export default function AppContainer() {
 
@@ -16,9 +16,9 @@ export default function AppContainer() {
       <WeatherMenu cities={cities} />
       <Switch>
         <Route path="/:cityName">
-          <WeatherWidget />
+          <Homepage />
         </Route>
-      </Switch>
+      </Switch> 
     </div>
   )
 }

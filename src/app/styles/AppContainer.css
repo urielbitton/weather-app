@@ -23,6 +23,11 @@
 .app-container.darkmode .weather-widget .dark-mode-btn {
   background: var(--dark1)
 }
+.app-container > small {
+  font-size: 15px;
+  font-weight: 400;
+  color: #aaa;
+}
 
 @media (max-width: 930px) {
   .app-container {
