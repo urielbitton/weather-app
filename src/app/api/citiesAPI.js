@@ -1,5 +1,7 @@
 export const cities = [
-  {name: 'Ottawa', url: '/ottawa'},
-  {name: 'Moscow', url: '/moscow'},
-  {name: 'Tokyo', url: '/tokyo'},
+  {name: 'Montreal', url: '/montreal'},
+  {name: 'Miami', url: '/miami'},
+  {name: 'Paris', url: '/paris'},
+  {name: 'New York', url: '/new-york'},
+  {name: 'London', url: '/london'},
 ]
